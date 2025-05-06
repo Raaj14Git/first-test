@@ -16,6 +16,17 @@ System.out.println("A is devide by 3 only");
 
 else 
 System.out.println("Ais devide by 5 only");
+
+
+switch (a){
+
+case 1:
+System.out.println("case " + a);
+break;
+case 2:
+System.out.println ("case" + a);
+  break;
+}
     
 
 //System.out.println(res);
