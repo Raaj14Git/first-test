@@ -1,45 +1,17 @@
 import java.util.Scanner;
 
 public class Hello{
+  public static void main (String arg[]){
 
-  public static void main(String args [])
-  {
-Scanner scan = new Scanner(System.in);
-int a = scan .nextInt();
+    Scanner scan = new Scanner (System.in);
+System.out.println("enter 1st value");
+    int a = scan.nextInt();
+System.out.println("enter 2nd value");
 
+int b = scan.nextInt();
 
-if (a %3 == 0 && a%5 ==0)
-System.out.println("a is devide by both 3 and 5");
+String res = a>b ? "a is grater " : " b is grater";
 
-else if (a%3 == 0)
-System.out.println("A is devide by 3 only");
-
-else 
-System.out.println("Ais devide by 5 only");
-
-
-switch (a){
-
-case 1:
-System.out.println("case " + a);
-break;
-case 2:
-System.out.println ("case" + a);
-  break;
-  default:
-  System.out.println("enter value between 1&2 ");
-}
-
-String result = a>1 ? "yes":"no";
-    
-
-System.out.println(result);
-
-
-
-boolean rain = false;
-String result1 = rain?"bring umbrella" :"enjoy sun light";
-System.out.println(result1);
-
+System.out.println(res);
   }
 }
