@@ -1,23 +1,20 @@
 import java.util.Scanner;
-import java.util.Random;
 
-public class Hello{
+class Hello{
+public static void main (String args[]) {
 
-  public static void main (String args[]) {
 
-    Random rand = new Random();
-    int i = 0;
-    
-    while(i!=5 )
-    
-     
+  int a;
+  Scanner scan = new Scanner (System.in);
 
-    {
-      i = rand.nextInt(8);
+  do{
+System.out.println("enter value A");
+a = scan.nextInt();
+int factor = a%2;
 
-      System.out.println(i);
+  }while(a<0);
+  System.out.println(factor);
+}
 
-     // i++;
-    }
-  }
+
 }
