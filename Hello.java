@@ -1,20 +1,16 @@
-import java.util.Scanner;
+public class Hello{
+int coffee =20;
+int tea = 10;
+public static void main (String args[]){
 
-class Hello{
-public static void main (String args[]) {
+Hello price = new Hello();
+
+System.out.println(price.tea);
+System.out.println(price.coffee);
 
 
-  int a;
-  Scanner scan = new Scanner (System.in);
-
-  do{
-System.out.println("enter value A");
-a = scan.nextInt();
-int factor = a%2;
-
-  }while(a<0);
-  System.out.println(factor);
 }
+
 
 
 }
