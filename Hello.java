@@ -1,17 +1,23 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class Hello{
-  public static void main (String arg[]){
 
-    Scanner scan = new Scanner (System.in);
-System.out.println("enter 1st value");
-    int a = scan.nextInt();
-System.out.println("enter 2nd value");
+  public static void main (String args[]) {
 
-int b = scan.nextInt();
+    Random rand = new Random();
+    int i = 0;
+    
+    while(i!=5 )
+    
+     
 
-String res = a>b ? "a is grater " : " b is grater";
+    {
+      i = rand.nextInt(8);
 
-System.out.println(res);
+      System.out.println(i);
+
+     // i++;
+    }
   }
 }
