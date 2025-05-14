@@ -1,24 +1,24 @@
 public class demo {
-    
-void greating()
-{
+    void sum(int a, int b) {
 
-    System.out.println("vanakkam");
-dummy();
-}
+        System.out.println(a + b);
+    }
 
+    void sub(int a, int b) {
 
-void dummy(){
+        System.out.println(a - b);
+    }
 
-    System.out.println("dummy");
-}
-public static void main (String args []){
+    void mult(int a, int b) {
 
+        System.out.println(a * b);
 
-    demo obj1 = new demo();
-obj1.greating();
-//obj1.dummy();
+    }
 
-}
-
+    public static void main(String[] args) {
+        demo obj1 = new demo();
+        obj1.sum(10, 5);
+        obj1.sub(100, 50);
+        obj1.mult(2, 6);
+    }
 }
